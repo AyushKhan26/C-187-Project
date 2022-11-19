@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nataraja Shiva</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+
+            <a-sky src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/HH_901_and_HH_902_in_the_Carina_nebula_%28captured_by_the_Hubble_Space_Telescope%29.jpg/834px-HH_901_and_HH_902_in_the_Carina_nebula_%28captured_by_the_Hubble_Space_Telescope%29.jpg"></a-sky>
+
+        <a-entity light="type: point;color: black;;intensity: 17,position: -50 1 0"></a-entity>
+
+         <a-assets>
+            <a-asset-item id="shiva" src="./shiva_nataraja.glb"></a-asset-item>
+         </a-assets>
+
+    
+            <a-camera position="-50 0 0.1" wasd-controls look-controls></a-camera>
+  
+
+            <a-entity id="Nataraja" rotation="0 0 0" gltf-model="#shiva" position="-50 1 0" scale="50 50 50" rotation="0 180 0"></a-entity>
+  
+           
+        </a-scene>
+    </body>
+</html>
